@@ -6,7 +6,6 @@
 @import "mixins/mixins";
 @import "mixins/extends";
 
-
 @import "common/typography";
 @import "common/classes";
 
@@ -16,3 +15,5 @@
 @import "components/header/header-logo";
 @import "components/header/header-navbar";
 @import "components/header/header-overlay";
+@import "components/skills/skills";
+@import "components/skills/skill-item";
