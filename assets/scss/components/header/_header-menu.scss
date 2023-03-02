@@ -1,3 +1,6 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
 .header-menu {
   position: absolute;
   z-index: 2;
@@ -5,7 +8,7 @@
   right: 0;
   left: 0;
   padding-top: $gap;
-  
+
   &__container {
     @extend %container;
     display: grid;
@@ -13,5 +16,4 @@
     grid-template-columns: auto 1fr;
     gap: $gap;
   }
-
 }

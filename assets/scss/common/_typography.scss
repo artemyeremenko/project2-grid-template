@@ -1,3 +1,6 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
 *,
 *::before,
 *::after {
@@ -30,10 +33,4 @@ h2 {
 a {
   text-decoration: none;
   color: $color-white;
-}
-
-.btn {
-}
-
-.btn--light {
 }
