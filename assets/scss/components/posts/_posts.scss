@@ -1,0 +1,20 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.posts {
+  &__container {
+    @extend %container;
+  }
+  &-item__link {
+    display: grid;
+    overflow: hidden;
+    height: 100%;
+    grid-template-rows: 300px 1fr;
+  }
+
+  &-item__caption {
+    display: grid;
+    align-content: center;
+    padding: 20px;
+  }
+}

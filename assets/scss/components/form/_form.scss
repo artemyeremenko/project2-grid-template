@@ -1,0 +1,30 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.form {
+  background-color: $color-primary;
+  &__container {
+    @extend %container;
+    padding: 30px 10px;
+  }
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $gap;
+  }
+
+  &__item {
+    border-color: rgba($color-white, 0);
+    border-bottom-color: rgba($color-white, 0.1);
+    background-color: rgba($color-white, 0.05);
+    padding: 0 $gap-lg;
+    font-size: 1.125rem;
+    &::placeholder {
+      color: $color-white;
+      opacity: 0.3;
+      letter-spacing: 2px;
+      font-weight: 400;
+      font-family: "Roboto";
+    }
+  }
+}
